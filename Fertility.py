@@ -151,11 +151,12 @@ ykmeans = cen[:, 1]
 plt.figure(figsize=(8.0, 8.0))
 # plot data with kmeans cluster number
 plt.scatter(change["1960"], change["Change"], 10, 
-            labels, marker="o", cmap=cm.rainbow)
+            labels, marker="o", cmap=cm.rainbow, label='Data Points')
 # show cluster centres
-plt.scatter(xkmeans, ykmeans, 45, "k", marker="d")
+plt.scatter(xkmeans, ykmeans, 45, "k", marker="d", label='Cluster centers')
 plt.xlabel("Fertility rate, total (births per woman),1960")
 plt.ylabel("Change per year (%)")
+plt.legend()
 plt.show()
 
 print(cen)
@@ -188,11 +189,12 @@ ykmeans = cen[:, 1]
 plt.figure(figsize=(8.0, 8.0))
 # plot data with kmeans cluster number
 plt.scatter(change2["1960"], change2["Change"], 10,
-            labels, marker="o", cmap=cm.rainbow)
+            labels, marker="o", cmap=cm.rainbow, label='Data Points')
 # show cluster centres
-plt.scatter(xkmeans, ykmeans, 45, "k", marker="d")
+plt.scatter(xkmeans, ykmeans, 45, "k", marker="d", label='Cluster centera')
 plt.xlabel("Fertility rate, total (births per woman),1960")
 plt.ylabel("Change per year (%)")
+plt.legend()
 plt.show()
 
 
